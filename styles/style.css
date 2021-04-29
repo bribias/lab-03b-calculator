@@ -20,37 +20,40 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    align-content: center;
+    margin: calc(var(--footer-height));
 }
 
-section {
-    background-color: var(--color5);
-    width: 1000px;
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+.outline {
+    background-color: #95B19F;
+    border-radius: 10px;
+    border: .7px solid gray;
+    width: 25%;
 }
+
 
 header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
+    color: #EED6D3;
+    background-color: #95A8B1;
     height: var(--header-height);
-    box-shadow: var(--shadow);
+    box-shadow:var(--shadow);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: var(--header-height);
+    font-size: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
 }
 
 footer {
@@ -60,28 +63,14 @@ footer {
     box-shadow: var(--shadow);
 }
 
-
-h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
 .gutter-right {
     margin-right: 20px;
-}
-
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
-}
-
-header img {
-    height: var(--header-height);
 }
 
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -92,10 +81,10 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
-  @keyframes pulse {
+
+@keyframes pulse {
     20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+        transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
 
     40% {
@@ -104,10 +93,10 @@ footer {
 
     60% {
         transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+    }
 
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 
-  }
+}

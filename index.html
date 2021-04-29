@@ -9,23 +9,56 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
-        </div>
+        Frosty Calculator
     </header>
     <main>
-        <section class="main-section">
-            <input id="add-input-1" type="number" />
-            +
-            <input id="add-input-2" type="number" />
-            <button id="add-button">Add</button>
-            <div id="add-results"></div>
-        </section>
+        <div class="outline">
+            <p>
+                <label for="add-number-1">
+                    <input type="text" name="box1" id="add-number-1">
+                </label>
+                <label for="add-number-2">
+                    <input type="text" name="box2" id="add-number-2">
+                </label>
+                <button id="add-button">+</button>
+                <span id="add-solution"></span>
+            </p>
+            <p>
+                <label for="sub-number-1">
+                    <input type="text" name="box3" id="sub-number-1">
+                </label>
+                <label for="sub-number-2">
+                    <input type="text" name="box4" id="sub-number-2">
+                </label>
+                <button id="sub-button">-</button>
+                <span id="sub-solution"></span>
+            </p>
+            <p>
+                <label for="times-number-1">
+                    <input type="text" name="box5" id="times-number-1">
+                </label>
+                <label for="times-number-2">
+                    <input type="text" name="box6" id="times-number-2">
+                </label>
+                <button id="times-button">*</button>
+                <span id="times-solution"></span>
+            </p>
+            <p>
+                <label for="divide-number-1">
+                    <input type="text" name="box7" id="divide-number-1">
+                </label>
+                <label for="divide-number-2">
+                    <input type="text" name="box8" id="divide-number-2">
+                </label>
+                <button id="divide-button">/</button>
+                <span id="divide-solution"></span>
+            </p>
+        </div>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
